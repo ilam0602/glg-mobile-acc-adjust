@@ -6,17 +6,18 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCSkQR9mzbJ7OiDmkGwKqyVC2G6ahR88IU",
-  authDomain: "glg-mobile-ec237.firebaseapp.com",
-  projectId: "glg-mobile-ec237",
-  storageBucket: "glg-mobile-ec237.firebasestorage.app",
-  messagingSenderId: "919807489327",
-  appId: "1:919807489327:web:5a780b3afa80547f095dda",
-  measurementId: "G-HCG95TDNW3"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
