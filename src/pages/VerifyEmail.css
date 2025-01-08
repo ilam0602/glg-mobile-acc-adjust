@@ -1,0 +1,18 @@
+
+.checkmark-image {
+    max-width: 50px;
+    height: auto;
+    margin: 1rem auto;
+  }
+  
+  .status-section {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .reset-password-title,
+  .reset-password-instructions,
+  .status-message {
+    text-align: center;
+  }
+  
